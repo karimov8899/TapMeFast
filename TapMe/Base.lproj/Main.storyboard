@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PORKYS_.TTF">
+            <string>Porkys</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TapMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="GjW-Oh-lma">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="28" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PyH-aN-zLR">
+                                <rect key="frame" x="16" y="44" width="343" height="212"/>
+                                <string key="text">Tap Me
+Fast</string>
+                                <fontDescription key="fontDescription" name="Porkys" family="Porky's" pointSize="65"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="23" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iwn-Y3-0oG">
+                                <rect key="frame" x="16" y="264" width="343" height="110"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.4649812940140845" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="4Uw-DF-IHO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Porkys" family="Porky's" pointSize="65"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fz8-vh-aXs">
+                                <rect key="frame" x="16" y="382" width="343" height="110"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50374119718309862" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="tVh-PT-mIQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Porkys" family="Porky's" pointSize="65"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7a2-Du-UFz">
+                                <rect key="frame" x="16" y="500" width="343" height="212"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.49551606514084506" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Porkys" family="Porky's" pointSize="60"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="szD-7t-kIQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7a2-Du-UFz" firstAttribute="top" secondItem="fz8-vh-aXs" secondAttribute="bottom" constant="8" id="1ZO-GT-ZpG"/>
+                            <constraint firstItem="fz8-vh-aXs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2ng-XH-8Ft"/>
+                            <constraint firstItem="Iwn-Y3-0oG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4QU-up-oOq"/>
+                            <constraint firstItem="GjW-Oh-lma" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="57Z-GC-jSH"/>
+                            <constraint firstItem="Iwn-Y3-0oG" firstAttribute="top" secondItem="PyH-aN-zLR" secondAttribute="bottom" constant="8" id="8it-Uk-Gho"/>
+                            <constraint firstItem="7a2-Du-UFz" firstAttribute="height" secondItem="PyH-aN-zLR" secondAttribute="height" id="HI7-gp-Pfp"/>
+                            <constraint firstItem="fz8-vh-aXs" firstAttribute="top" secondItem="Iwn-Y3-0oG" secondAttribute="bottom" constant="8" id="JDu-R4-u13"/>
+                            <constraint firstItem="7a2-Du-UFz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MkL-Co-tfs"/>
+                            <constraint firstAttribute="bottom" secondItem="7a2-Du-UFz" secondAttribute="bottom" constant="100" id="QDO-Re-o8u"/>
+                            <constraint firstItem="PyH-aN-zLR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44" id="Qid-4q-xN8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7a2-Du-UFz" secondAttribute="trailing" constant="16" id="VY8-il-j18"/>
+                            <constraint firstAttribute="trailing" secondItem="GjW-Oh-lma" secondAttribute="trailing" id="c9k-F0-a3Y"/>
+                            <constraint firstItem="PyH-aN-zLR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dsq-4l-DzP"/>
+                            <constraint firstItem="GjW-Oh-lma" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hRB-cS-oej"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PyH-aN-zLR" secondAttribute="trailing" constant="16" id="hma-uz-fzV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Iwn-Y3-0oG" secondAttribute="trailing" constant="16" id="my9-7w-wjV"/>
+                            <constraint firstAttribute="bottom" secondItem="GjW-Oh-lma" secondAttribute="bottom" id="slL-2A-tMN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fz8-vh-aXs" secondAttribute="trailing" constant="16" id="wLy-42-gCH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="fz8-vh-aXs" id="I4A-d0-8XE"/>
+                        <outlet property="startGameButton" destination="7a2-Du-UFz" id="HYH-xY-1wP"/>
+                        <outlet property="timeLabel" destination="Iwn-Y3-0oG" id="J3y-yT-m68"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="1920" height="1080"/>
+    </resources>
+</document>
